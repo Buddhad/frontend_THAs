@@ -69,6 +69,11 @@ body {
     border-radius: 50% 50% 50% 0;
     transform: rotate(0deg);
   }
+  .back{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+  }
   
   @keyframes sec {
     from {
