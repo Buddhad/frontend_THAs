@@ -1,47 +1,82 @@
-*{
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
-}
-body{
-    width: 100vh;
-    height: 100vh;
     display: flex;
     align-items: center;
-  justify-content: center;
+    justify-content: center;
+    height: 100vh;
+    /* background:linear-gradient(90deg, #ff00cc 0%,#333399 100% ); */
+    background:linear-gradient(90deg, #f7ff00 0%,#db36a4 100% );
 }
-.circle{
-    width: 500px;
+  
+  .circle {
+    position: absolute;
     height: 500px;
-    border: 50px solid red;
+    width: 500px;
     border-radius: 50%;
-    box-shadow: 5px 10px #888888;
+    animation: min 10s linear infinite;
+    background-color: white;
+
     
-}
-.line:nth-child(1){
-    width: 5px;
-    height: 130px;
-    background: black;
-    position: relative;
-    left: 200px;
-    top: 250px;
-}
-.line:nth-child(2){
-    width: 5px;
-    height: 130px;
-    background: black;
-    position: relative;
-    left: 245px;
-    top: 100px;
-    transform: rotate(-45deg);
-}
-.line:nth-child(3){
-    width: 5px;
-    height: 130px;
-    background: black;
-    position: relative;
-    left: 155px;
-    top: -30px;
-    transform: rotate(45deg);
-}
+  }
+  .Mid-dot{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color:black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .hour {
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    background-color:black;
+    transform-origin: left ;
+    border-radius: 10px ;
+    transform: translateY(0%) rotate(215deg);
+    
+  }
+  
+  .minute {
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    background-color: black;
+    transform-origin: left center;
+    transform: rotate(-30deg) translateY(-50%);
+    border-radius: 10px;
+    
+  }
+  
+  .second {
+    position: absolute;
+    width: 8.5rem;
+    height: 0.2rem;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    transform-origin: left center;
+    animation: sec 60s steps(60, end) infinite;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(0deg);
+  }
+  
+  @keyframes sec {
+    from {
+      transform: translateY(-50%) rotate(0deg);
+    }
+    to {
+      transform: translateY(-50%) rotate(360deg);
+    }
+  }
+  
+  
