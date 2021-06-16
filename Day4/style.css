@@ -63,7 +63,7 @@ body {
     height: 0.2rem;
     top: 50%;
     left: 50%;
-    background-color: red;
+    background-color: blueviolet;
     transform-origin: left center;
     animation: sec 60s steps(60, end) infinite;
     border-radius: 50% 50% 50% 0;
