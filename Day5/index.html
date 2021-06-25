@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Day5/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
 <body>
+    <h1>Simple calculator</h1>
+    <div id="container">
+        <div class="num">
+            <input type="text" id="num1" placeholder="Enter First Number">
+            <input type="text" id="num2" placeholder="Enter Second Number">
+        </div>
+        <div class="operations">
+            <div onclick="sum()">Add (+)</div>
+            <div onclick="sub()">Subtract (-)</div>
+            <div onclick="mul()">Multiply (*)</div>
+            <div onclick="divide()">Divide (/)</div>
+        </div>
+        <div id="output">output</div>
 
-<div class="container">
-    <h1>Calculator</h1>
-    <hr>
-    <input type="text" name="screen" id="screen">  <br> <br>
-    <!-- <input type="text" name="output" id="userinput" placeholder="Enter The Second Number"> <br> <br> -->
-    <!-- <input type="text" name="output" id="display" placeholder="Output"> <br> <br> -->
-    <button>+</button>
-    <button>-</button>
-    <button>X</button>
-    <button>/</button>
-    <button>=</button>
-    <button>C</button>
-
-</div>
-<script src="/Day5/main.js"></script>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
