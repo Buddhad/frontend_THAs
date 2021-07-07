@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    height:80vh;
+    width: 20%;
+    background: blue;
+    border-radius: 10px;
+}
+.weathercon{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
