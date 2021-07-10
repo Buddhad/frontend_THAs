@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.App{
+   width: 40vw;
+   height: 40vh;
+  border-radius: 10px;
+   overflow-y: scroll;
+   border: 5px solid black;
+  
+   
+}
+
+button{
+  width: 50px;
+  height: 50px;
+  
+  /* align-items: center;
+  justify-content: center; */
+ margin: 15px;
+  background-color: red;
+}
