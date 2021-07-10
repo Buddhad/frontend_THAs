@@ -1,0 +1,44 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    border: 10px solid blueviolet;
+    width: 20vw;
+    height: 20vh;
+
+}
+.droptarget {
+    float: left; 
+    width: 100px; 
+    height:55px;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+  }
+h3{
+      position: relative;
+      top: -35px;
+      left: 10px;
+  }
+
+
+.onclick{
+    border: 10px solid blueviolet;
+    width: 20vw;
+    height: 20vh;
+}
+
+video{
+    width: 20vw;
+    height: 20vh;
+    border: 10px solid blueviolet;
+}
