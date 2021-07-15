@@ -9,33 +9,40 @@
 </head>
 <body onafterprint="myFunc()">
     <div class="container">
-
-    <h3>Ondrag And Ondrop Event</h3>
-    
-    <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag me!</p>
-      </div>
-
-      <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-    </div>
-    <div class="onclick">
-        <h3>The onclick Event</h3>
-        <p id="print"></p>
-        <button onclick="myFunction()">Click me</button>
-    </div>  
-    <div class="onclick">
-        <h3>The onafterprint Event</h3>
-        <p> Keyboard shortcuts, such as Ctrl+P sets the<br> page to print</p>
-    </div> 
-
-    <div class="Play">
-        <h3>The Play Event</h3>
-        <video controls onplay="func()">
+            <div class="grid-item1">
+                <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag me!</p>
+                  
+                  </div>
+                    <div class="gettarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="grid-item2">
+                <p id="print"></p>
+                <button class="btn" onclick="myFunction()">Click me</button>
+                 
+            </div>  
+           
+            <div class="grid-item3">
+                <div class="onclick">
+                    <h3>The onafterprint Event</h3>
+                    <p> Keyboard shortcuts, such as Ctrl+P sets the<br> page to print</p>
+                </div>  
+            </div>  
+            <div class="grid-item4">
+                <video controls onplay="func()">
         
-            <source src="./video/Big Hero 6_ _Immortals_ – Fall Out Boy - Movie Scene 720p.mp4" type="video/mp4" class="vid">
-            
-          </video>  
-    </div>
+                    <source src="./video/Big Hero 6_ _Immortals_ – Fall Out Boy - Movie Scene 720p.mp4" type="video/mp4" class="vid">
+                    
+                  </video>  
+            </div>
+           
+          </div>
+    
     <script src="main.js"></script>
 </body>
 </html>
+
+
+
+
+

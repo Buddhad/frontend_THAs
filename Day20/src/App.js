@@ -1,30 +1,16 @@
-import './App.css'
-
-// import Data from './Components/Data'
-
-import Task from './Components/Task'
-function App(props){
-  return(
+import './App.css';
+import Block from './Components/Block';
+function App() {
+  const head = "Calorie Read Only";
+  return (
+  <div className="title">
+     <h1>{head}</h1>
     <div className="App">
-    <div className="Title">
-    <header className="header">
-            <h1> {props.title}</h1>
-
-    <div className="container">
-    
-         {/* <Button /> */}
-         {/* <Data /> */}
-         <Task />
-        
-    </div>
-    </header>
+      <Block />
+     
     </div>
     </div>
-  )
-}
-
-App.defaultProps = {
-  title: 'Calori Tracker',
+  );
 }
 
 export default App;

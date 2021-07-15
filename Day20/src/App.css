@@ -4,52 +4,39 @@
   box-sizing: border-box;
 }
 
-.App{
+body{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.header{
+.App{
+   width: 40vw;
+   height: 40vh;
+  border-radius: 10px;
+   overflow-y: scroll;
+   border: 5px solid black;
+  
+   
+}
+.title{
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
-.btn{
-  display: inline-block;
-  border: none;
-  padding: 10px 20px;
-  margin: 15px;
-  cursor: pointer;
-  text-decoration: none;
-  background-color: black;
-  color: white;
-  border-radius: 5px;
-  font-size: 25px;
-
+.Text0{
+  height: 8vh;
+ position: relative;
+border-radius: 10px;
+  background: greenyellow;
 }
-.btn:focus {
-  outline: none;
-}
-.btn:active{
-  transform: scale(0.98);
-}
-/* .btn-block{
-  display: block;
-  width: 100%;
-} */
-.container{
-  width: 50vw;
-  height: 50vh;
-  overflow-y: scroll;
-  border: 1px solid steelblue;
 
-}
-.App input{
- margin: 20px;
- width: 40vw;
- height: 5vh;
- font-size: 35px;
-
+.Text1,.Text2,.Text3,.Text4,.Text5,.Text6,.Text7{
+  
+  height: 8vh;
+  background: greenyellow;
+  position: relative;
+ top:40px;
+ border-radius: 10px;
 }

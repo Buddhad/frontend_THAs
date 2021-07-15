@@ -4,41 +4,87 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
+
 .container{
-    border: 10px solid blueviolet;
-    width: 20vw;
-    height: 20vh;
-
+    display: grid;
+    grid-template-columns: auto auto ;
+    height: 100vh;
+   
 }
+
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+.grid-item1 {
+    background-color: green;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .grid-item2 {
+    background-color: red;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .grid-item3 {
+    background-color: orange;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .grid-item4 {
+    background-color: slategray;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
 .droptarget {
-    float: left; 
-    width: 100px; 
-    height:55px;
-    margin: 15px;
-    padding: 10px;
-    border: 1px solid #aaaaaa;
+  position: relative;
+  left: 10%;
+  top: 50px;
+   width: 100px;
+  height: 100px;
+  font-size: 15px;
+    border: 1px solid steelblue;
   }
-h3{
-      position: relative;
-      top: -35px;
-      left: 10px;
+.gettarget{
+width: 100px;
+height: 100px;
+border: 1px solid steelblue;
+position: relative;
+left: 30%;
+top: -50px;
   }
 
-
-.onclick{
-    border: 10px solid blueviolet;
-    width: 20vw;
-    height: 20vh;
+.btn{
+  font-size: 15px;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+ 
 }
+.btn:hover{
+  transform: scale(0.90);
+}
+
 
 video{
-    width: 20vw;
-    height: 20vh;
-    border: 10px solid blueviolet;
+  width: 20vw;
+  height: 30vh;
+ 
+    /* border: 10px solid blueviolet; */
 }
