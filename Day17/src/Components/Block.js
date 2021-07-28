@@ -1,8 +1,9 @@
-function Block() {
-    return (
-      <div className ="Text0">
-          <h1>Pizza</h1>
+const Block = (props) => {
+  return (
+    <div className ="Text0">
+          <h1>{props.title}</h1>
           <h3>you have consumed 56 cals today</h3>
+          
           <div className ="Text1">
           <h1>Burger</h1>
           <h3>you have consumed 69 cals today</h3>
@@ -31,7 +32,16 @@ function Block() {
         </div>
         </div>
         </div>
-    )
+  )
+}
+
+Block.defaultsProps={
+  title:'Pizza'
 }
 
 export default Block
+
+
+
+
+
