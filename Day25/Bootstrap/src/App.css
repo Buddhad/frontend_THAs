@@ -1,0 +1,18 @@
+/* .card-title.h5 {
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 24px;
+   } */
+   
+   /* .card-img-top {
+    height: 304px;
+   } */
+   /* .blockquote.mb-0.card-body:nth-child(1) > p:nth-child(2) {
+    font-size: 18px;
+   } */
+   .card-img-top {
+    height: 312px;
+   }
+   .App{
+       overflow-x: hidden;
+   }
